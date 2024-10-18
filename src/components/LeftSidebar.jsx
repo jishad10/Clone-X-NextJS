@@ -2,6 +2,7 @@ import { SignedIn, SignedOut, SignInButton, SignOutButton } from '@clerk/nextjs'
 import Link from 'next/link';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HiHome } from 'react-icons/hi';
+import MiniProfile from './MiniProfile';
 
 export default function Sidebar() {
   return (
@@ -26,6 +27,9 @@ export default function Sidebar() {
           </SignedOut>
         </button>
       </div>
+      <SignedIn>
+        <MiniProfile/>
+      </SignedIn>
     </div>
   );
 }
