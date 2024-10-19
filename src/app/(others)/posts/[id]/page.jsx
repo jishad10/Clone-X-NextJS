@@ -23,7 +23,7 @@ export default async function PostPage({ params }) {
         <Link href={'/'} className='hover:bg-gray-100 rounded-full p-2'>
           <HiArrowLeft className='h-5 w-5' />
         </Link>
-        <h2 className='sm:text-lg'>Back</h2>
+        <h2 className='sm:text-lg'>Back To the Feed</h2>
       </div>
       {!data && <h2 className='text-center mt-5 text-lg'>Post not found</h2>}
       {data && <Post post={data} />}
